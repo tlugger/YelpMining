@@ -176,10 +176,7 @@ $(document).ready(function () {
 <p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5zdGFsbC5wYWNrYWdlcyhcImUxMDcxXCIpXG5gYGAifQ== -->
-<pre class="r"><code>install.packages(&quot;e1071&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiSW5zdGFsbGluZyBwYWNrYWdlIGludG8g4oCYL2hvbWUvYW1vZ2gvUi94ODZfNjQtcGMtbGludXgtZ251LWxpYnJhcnkvMy4y4oCZXG4oYXMg4oCYbGli4oCZIGlzIHVuc3BlY2lmaWVkKVxuLS0yMDE3LTA0LTI0IDEwOjI4OjM4LS0gIGh0dHBzOi8vY3Jhbi5yc3R1ZGlvLmNvbS9zcmMvY29udHJpYi9lMTA3MV8xLjYtOC50YXIuZ3pcblJlc29sdmluZyBjcmFuLnJzdHVkaW8uY29tIChjcmFuLnJzdHVkaW8uY29tKS4uLiA1NC4xOTIuMTIyLjM3XG5Db25uZWN0aW5nIHRvIGNyYW4ucnN0dWRpby5jb20gKGNyYW4ucnN0dWRpby5jb20pfDU0LjE5Mi4xMjIuMzd8OjQ0My4uLiBjb25uZWN0ZWQuXG5IVFRQIHJlcXVlc3Qgc2VudCwgYXdhaXRpbmcgcmVzcG9uc2UuLi4gMjAwIE9LXG5MZW5ndGg6IDU4MTUxMyAoNTY4SykgW2FwcGxpY2F0aW9uL3gtZ3ppcF1cblNhdmluZyB0bzog4oCYL3RtcC9SdG1wVWdvcE9LL2Rvd25sb2FkZWRfcGFja2FnZXMvZTEwNzFfMS42LTgudGFyLmd64oCZXG5cbiAgICAgMEsgLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uICA4JSAxLjcwTSAwc1xuICAgIDUwSyAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gMTclIDIuMjFNIDBzXG4gICAxMDBLIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAyNiUgMS44ME0gMHNcbiAgIDE1MEsgLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIDM1JSAxLjg1TSAwc1xuICAgMjAwSyAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gNDQlIDEuMTJNIDBzXG4gICAyNTBLIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiA1MiUgMS43ME0gMHNcbiAgIDMwMEsgLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIDYxJSAyLjk0TSAwc1xuICAgMzUwSyAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gNzAlIDIuMjVNIDBzXG4gICA0MDBLIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiA3OSUgMS42NE0gMHNcbiAgIDQ1MEsgLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIDg4JSAyLjgyTSAwc1xuICAgNTAwSyAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gOTYlIDIuMTBNIDBzXG4gICA1NTBLIC4uLi4uLi4uLi4gLi4uLi4uLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEwMCUgMTguN009MC4zc1xuXG4yMDE3LTA0LTI0IDEwOjI4OjM4ICgxLjk0IE1CL3MpIC0g4oCYL3RtcC9SdG1wVWdvcE9LL2Rvd25sb2FkZWRfcGFja2FnZXMvZTEwNzFfMS42LTgudGFyLmd64oCZIHNhdmVkIFs1ODE1MTMvNTgxNTEzXVxuXG4qIGluc3RhbGxpbmcgKnNvdXJjZSogcGFja2FnZSDigJhlMTA3MeKAmSAuLi5cbioqIHBhY2thZ2Ug4oCYZTEwNzHigJkgc3VjY2Vzc2Z1bGx5IHVucGFja2VkIGFuZCBNRDUgc3VtcyBjaGVja2VkXG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiSW5zdGFsbGluZyBwYWNrYWdlIGludG8g4oCYL2hvbWUvYW1vZ2gvUi94ODZfNjQtcGMtbGludXgtZ251LWxpYnJhcnkvMy4y4oCZXG4oYXMg4oCYbGli4oCZIGlzIHVuc3BlY2lmaWVkKVxuLS0yMDE3LTA0LTI0IDEwOjI4OjM4LS0gIGh0dHBzOi8vY3Jhbi5yc3R1ZGlvLmNvbS9zcmMvY29udHJpYi9lMTA3MV8xLjYtOC50YXIuZ3pcblJlc29sdmluZyBjcmFuLnJzdHVkaW8uY29tIChjcmFuLnJzdHVkaW8uY29tKS4uLiA1NC4xOTIuMTIyLjM3XG5Db25uZWN0aW5nIHRvIGNyYW4ucnN0dWRpby5jb20gKGNyYW4ucnN0dWRpby5jb20pfDU0LjE5Mi4xMjIuMzd8OjQ0My4uLiBjb25uZWN0ZWQuXG5IVFRQIHJlcXVlc3Qgc2VudCwgYXdhaXRpbmcgcmVzcG9uc2UuLi4gMjAwIE9LXG5MZW5ndGg6IDU4MTUxMyAoNTY4SykgW2FwcGxpY2F0aW9uL3gtZ3ppcF1cblNhdmluZyB0bzog4oCYL3RtcC9SdG1wVWdvcE9LL2Rvd25sb2FkZWRfcGFja2FnZXMvZTEwNzFfMS42LTgudGFyLmd64oCZXG5cbiAgICAgMEsgLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uICA4JSAxLjcwTSAwc1xuICAgIDUwSyAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gMTclIDIuMjFNIDBzXG4gICAxMDBLIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAyNiUgMS44ME0gMHNcbiAgIDE1MEsgLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIDM1JSAxLjg1TSAwc1xuICAgMjAwSyAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gNDQlIDEuMTJNIDBzXG4gICAyNTBLIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiA1MiUgMS43ME0gMHNcbiAgIDMwMEsgLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIDYxJSAyLjk0TSAwc1xuICAgMzUwSyAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gNzAlIDIuMjVNIDBzXG4gICA0MDBLIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiA3OSUgMS42NE0gMHNcbiAgIDQ1MEsgLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIDg4JSAyLjgyTSAwc1xuICAgNTAwSyAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gLi4uLi4uLi4uLiAuLi4uLi4uLi4uIC4uLi4uLi4uLi4gOTYlIDIuMTBNIDBzXG4gICA1NTBLIC4uLi4uLi4uLi4gLi4uLi4uLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEwMCUgMTguN009MC4zc1xuXG4yMDE3LTA0LTI0IDEwOjI4OjM4ICgxLjk0IE1CL3MpIC0g4oCYL3RtcC9SdG1wVWdvcE9LL2Rvd25sb2FkZWRfcGFja2FnZXMvZTEwNzFfMS42LTgudGFyLmd64oCZIHNhdmVkIFs1ODE1MTMvNTgxNTEzXVxuXG4qIGluc3RhbGxpbmcgKnNvdXJjZSogcGFja2FnZSDigJhlMTA3MeKAmSAuLi5cbioqIHBhY2thZ2Ug4oCYZTEwNzHigJkgc3VjY2Vzc2Z1bGx5IHVucGFja2VkIGFuZCBNRDUgc3VtcyBjaGVja2VkXG5jaGVja2luZyBmb3IgQysrIGNvbXBpbGVyIGRlZmF1bHQgb3V0cHV0IGZpbGUgbmFtZS4uLiBhLm91dFxuY2hlY2tpbmcgd2hldGhlciB0aGUgQysrIGNvbXBpbGVyIHdvcmtzLi4uIHllc1xuY2hlY2tpbmcgd2hldGhlciB3ZSBhcmUgY3Jvc3MgY29tcGlsaW5nLi4uIG5vXG5jaGVja2luZyBmb3Igc3VmZml4IG9mIGV4ZWN1dGFibGVzLi4uIFxuY2hlY2tpbmcgZm9yIHN1ZmZpeCBvZiBvYmplY3QgZmlsZXMuLi4gb1xuY2hlY2tpbmcgd2hldGhlciB3ZSBhcmUgdXNpbmcgdGhlIEdOVSBDKysgY29tcGlsZXIuLi4geWVzXG5jaGVja2luZyB3aGV0aGVyIGcrKyBhY2NlcHRzIC1nLi4uIHllc1xuKiogbGlic1xuZ2NjIC1zdGQ9Z251OTkgLUkvdXNyL3NoYXJlL1IvaW5jbHVkZSAtRE5ERUJVRyAgICAgIC1mcGljICAtZyAtTzIgLWZzdGFjay1wcm90ZWN0b3Itc3Ryb25nIC1XZm9ybWF0IC1XZXJyb3I9Zm9ybWF0LXNlY3VyaXR5IC1XZGF0ZS10aW1lIC1EX0ZPUlRJRllfU09VUkNFPTIgLWcgIC1jIFJzdm0uYyAtbyBSc3ZtLm9cbmdjYyAtc3RkPWdudTk5IC1JL3Vzci9zaGFyZS9SL2luY2x1ZGUgLUROREVCVUcgICAgICAtZnBpYyAgLWcgLU8yIC1mc3RhY2stcHJvdGVjdG9yLXN0cm9uZyAtV2Zvcm1hdCAtV2Vycm9yPWZvcm1hdC1zZWN1cml0eSAtV2RhdGUtdGltZSAtRF9GT1JUSUZZX1NPVVJDRT0yIC1nICAtYyBjbWVhbnMuYyAtbyBjbWVhbnMub1xuZ2NjIC1zdGQ9Z251OTkgLUkvdXNyL3NoYXJlL1IvaW5jbHVkZSAtRE5ERUJVRyAgICAgIC1mcGljICAtZyAtTzIgLWZzdGFjay1wcm90ZWN0b3Itc3Ryb25nIC1XZm9ybWF0IC1XZXJyb3I9Zm9ybWF0LXNlY3VyaXR5IC1XZGF0ZS10aW1lIC1EX0ZPUlRJRllfU09VUkNFPTIgLWcgIC1jIGNzaGVsbC5jIC1vIGNzaGVsbC5vXG5nY2MgLXN0ZD1nbnU5OSAtSS91c3Ivc2hhcmUvUi9pbmNsdWRlIC1ETkRFQlVHICAgICAgLWZwaWMgIC1nIC1PMiAtZnN0YWNrLXByb3RlY3Rvci1zdHJvbmcgLVdmb3JtYXQgLVdlcnJvcj1mb3JtYXQtc2VjdXJpdHkgLVdkYXRlLXRpbWUgLURfRk9SVElGWV9TT1VSQ0U9MiAtZyAgLWMgZmxveWQuYyAtbyBmbG95ZC5vXG5nY2MgLXN0ZD1nbnU5OSAtSS91c3Ivc2hhcmUvUi9pbmNsdWRlIC1ETkRFQlVHICAgICAgLWZwaWMgIC1nIC1PMiAtZnN0YWNrLXByb3RlY3Rvci1zdHJvbmcgLVdmb3JtYXQgLVdlcnJvcj1mb3JtYXQtc2VjdXJpdHkgLVdkYXRlLXRpbWUgLURfRk9SVElGWV9TT1VSQ0U9MiAtZyAgLWMgaW5pdC5jIC1vIGluaXQub1xuZysrIC1JL3Vzci9zaGFyZS9SL2luY2x1ZGUgLUROREVCVUcgICAgICAtZnBpYyAgLWcgLU8yIC1mc3RhY2stcHJvdGVjdG9yLXN0cm9uZyAtV2Zvcm1hdCAtV2Vycm9yPWZvcm1hdC1zZWN1cml0eSAtV2RhdGUtdGltZSAtRF9GT1JUSUZZX1NPVVJDRT0yIC1nICAtYyBzdm0uY3BwIC1vIHN2bS5vXG5zdm0uY3BwOiBJbiBmdW5jdGlvbiDigJhzdm1fbW9kZWwqIHN2bV9sb2FkX21vZGVsKGNvbnN0IGNoYXIqKeKAmTpcbnN2bS5jcHA6Mjc4ODoyNDogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgIGZzY2FuZihmcCxcXCU4MHNcXCxjbWQpO1xuICAgICAgICAgICAgICAgICAgICAgICAgXlxuc3ZtLmNwcDoyNzkyOjI1OiB3YXJuaW5nOiBpZ25vcmluZyByZXR1cm4gdmFsdWUgb2Yg4oCYaW50IGZzY2FuZihGSUxFKiwgY29uc3QgY2hhciosIC4uLinigJksIGRlY2xhcmVkIHdpdGggYXR0cmlidXRlIHdhcm5fdW51c2VkX3Jlc3VsdCBbLVd1bnVzZWQtcmVzdWx0XVxuICAgIGZzY2FuZihmcCxcXCU4MHNcXCxjbWQpO1xuICAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6MjgxNzoyNTogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICBmc2NhbmYoZnAsXFwlODBzXFwsY21kKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICBeXG5zdm0uY3BwOjI4NDE6MzM6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICAgZnNjYW5mKGZwLFxcJWRcXCwmcGFyYW0uZGVncmVlKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6Mjg0MzozMzogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICBmc2NhbmYoZnAsXFwlbGZcXCwmcGFyYW0uZ2FtbWEpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXlxuc3ZtLmNwcDoyODQ1OjMzOiB3YXJuaW5nOiBpZ25vcmluZyByZXR1cm4gdmFsdWUgb2Yg4oCYaW50IGZzY2FuZihGSUxFKiwgY29uc3QgY2hhciosIC4uLinigJksIGRlY2xhcmVkIHdpdGggYXR0cmlidXRlIHdhcm5fdW51c2VkX3Jlc3VsdCBbLVd1bnVzZWQtcmVzdWx0XVxuICAgIGZzY2FuZihmcCxcXCVsZlxcLCZwYXJhbS5jb2VmMCk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeXG5zdm0uY3BwOjI4NDc6MzY6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICAgZnNjYW5mKGZwLFxcJWRcXCwmbW9kZWwtPm5yX2NsYXNzKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6Mjg0OToyOTogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICBmc2NhbmYoZnAsXFwlZFxcLCZtb2RlbC0+bCk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6Mjg1NTozNjogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICAgZnNjYW5mKGZwLFxcJWxmXFwsJm1vZGVsLT5yaG9baV0pO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXlxuc3ZtLmNwcDoyODYyOjM3OiB3YXJuaW5nOiBpZ25vcmluZyByZXR1cm4gdmFsdWUgb2Yg4oCYaW50IGZzY2FuZihGSUxFKiwgY29uc3QgY2hhciosIC4uLinigJksIGRlY2xhcmVkIHdpdGggYXR0cmlidXRlIHdhcm5fdW51c2VkX3Jlc3VsdCBbLVd1bnVzZWQtcmVzdWx0XVxuICAgICBmc2NhbmYoZnAsXFwlZFxcLCZtb2RlbC0+bGFiZWxbaV0pO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6Mjg2OTozODogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICAgZnNjYW5mKGZwLFxcJWxmXFwsJm1vZGVsLT5wcm9iQVtpXSk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6Mjg3NjozODogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICAgZnNjYW5mKGZwLFxcJWxmXFwsJm1vZGVsLT5wcm9iQltpXSk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6Mjg4MzozNTogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICAgZnNjYW5mKGZwLFxcJWRcXCwmbW9kZWwtPm5TVltpXSk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF5cbmcrKyAtc2hhcmVkIC1ML3Vzci9saWIvUi9saWIgLVdsLC1Cc3ltYm9saWMtZnVuY3Rpb25zIC1XbCwteixyZWxybyAtbyBlMTA3MS5zbyBSc3ZtLm8gY21lYW5zLm8gY3NoZWxsLm8gZmxveWQubyBpbml0Lm8gc3ZtLm8gLUwvdXNyL2xpYi9SL2xpYiAtbFJcbmluc3RhbGxpbmcgdG8gL2hvbWUvYW1vZ2gvUi94ODZfNjQtcGMtbGludXgtZ251LWxpYnJhcnkvMy4yL2UxMDcxL2xpYnNcbioqIFJcbioqIGluc3RcbioqIHByZXBhcmluZyBwYWNrYWdlIGZvciBsYXp5IGxvYWRpbmdcbioqIGhlbHBcbioqKiBpbnN0YWxsaW5nIGhlbHAgaW5kaWNlc1xuKiogYnVpbGRpbmcgcGFja2FnZSBpbmRpY2VzXG4qKiBpbnN0YWxsaW5nIHZpZ25ldHRlc1xuKiogdGVzdGluZyBpZiBpbnN0YWxsZWQgcGFja2FnZSBjYW4gYmUgbG9hZGVkXG4qIERPTkUgKGUxMDcxKVxuXG5UaGUgZG93bmxvYWRlZCBzb3VyY2UgcGFja2FnZXMgYXJlIGluXG5cdOKAmC90bXAvUnRtcFVnb3BPSy9kb3dubG9hZGVkX3BhY2thZ2Vz4oCZXG4ifQ== -->
 <pre><code>Installing package into ‘/home/amogh/R/x86_64-pc-linux-gnu-library/3.2’
 (as ‘lib’ is unspecified)
 --2017-04-24 10:28:38--  https://cran.rstudio.com/src/contrib/e1071_1.6-8.tar.gz
@@ -205,75 +202,63 @@ Saving to: ‘/tmp/RtmpUgopOK/downloaded_packages/e1071_1.6-8.tar.gz’
 2017-04-24 10:28:38 (1.94 MB/s) - ‘/tmp/RtmpUgopOK/downloaded_packages/e1071_1.6-8.tar.gz’ saved [581513/581513]
 
 * installing *source* package ‘e1071’ ...
-** package ‘e1071’ successfully unpacked and MD5 sums checked</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiY2hlY2tpbmcgZm9yIEMrKyBjb21waWxlciBkZWZhdWx0IG91dHB1dCBmaWxlIG5hbWUuLi4gYS5vdXRcbmNoZWNraW5nIHdoZXRoZXIgdGhlIEMrKyBjb21waWxlciB3b3Jrcy4uLiB5ZXNcbmNoZWNraW5nIHdoZXRoZXIgd2UgYXJlIGNyb3NzIGNvbXBpbGluZy4uLiBub1xuY2hlY2tpbmcgZm9yIHN1ZmZpeCBvZiBleGVjdXRhYmxlcy4uLiBcbmNoZWNraW5nIGZvciBzdWZmaXggb2Ygb2JqZWN0IGZpbGVzLi4uIG9cbmNoZWNraW5nIHdoZXRoZXIgd2UgYXJlIHVzaW5nIHRoZSBHTlUgQysrIGNvbXBpbGVyLi4uIHllc1xuY2hlY2tpbmcgd2hldGhlciBnKysgYWNjZXB0cyAtZy4uLiB5ZXNcbiJ9 -->
-<pre><code>checking for C++ compiler default output file name... a.out
+** package ‘e1071’ successfully unpacked and MD5 sums checked
+checking for C++ compiler default output file name... a.out
 checking whether the C++ compiler works... yes
 checking whether we are cross compiling... no
 checking for suffix of executables... 
 checking for suffix of object files... o
 checking whether we are using the GNU C++ compiler... yes
-checking whether g++ accepts -g... yes</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiKiogbGlic1xuIn0= -->
-<pre><code>** libs</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiZ2NjIC1zdGQ9Z251OTkgLUkvdXNyL3NoYXJlL1IvaW5jbHVkZSAtRE5ERUJVRyAgICAgIC1mcGljICAtZyAtTzIgLWZzdGFjay1wcm90ZWN0b3Itc3Ryb25nIC1XZm9ybWF0IC1XZXJyb3I9Zm9ybWF0LXNlY3VyaXR5IC1XZGF0ZS10aW1lIC1EX0ZPUlRJRllfU09VUkNFPTIgLWcgIC1jIFJzdm0uYyAtbyBSc3ZtLm9cbmdjYyAtc3RkPWdudTk5IC1JL3Vzci9zaGFyZS9SL2luY2x1ZGUgLUROREVCVUcgICAgICAtZnBpYyAgLWcgLU8yIC1mc3RhY2stcHJvdGVjdG9yLXN0cm9uZyAtV2Zvcm1hdCAtV2Vycm9yPWZvcm1hdC1zZWN1cml0eSAtV2RhdGUtdGltZSAtRF9GT1JUSUZZX1NPVVJDRT0yIC1nICAtYyBjbWVhbnMuYyAtbyBjbWVhbnMub1xuZ2NjIC1zdGQ9Z251OTkgLUkvdXNyL3NoYXJlL1IvaW5jbHVkZSAtRE5ERUJVRyAgICAgIC1mcGljICAtZyAtTzIgLWZzdGFjay1wcm90ZWN0b3Itc3Ryb25nIC1XZm9ybWF0IC1XZXJyb3I9Zm9ybWF0LXNlY3VyaXR5IC1XZGF0ZS10aW1lIC1EX0ZPUlRJRllfU09VUkNFPTIgLWcgIC1jIGNzaGVsbC5jIC1vIGNzaGVsbC5vXG5nY2MgLXN0ZD1nbnU5OSAtSS91c3Ivc2hhcmUvUi9pbmNsdWRlIC1ETkRFQlVHICAgICAgLWZwaWMgIC1nIC1PMiAtZnN0YWNrLXByb3RlY3Rvci1zdHJvbmcgLVdmb3JtYXQgLVdlcnJvcj1mb3JtYXQtc2VjdXJpdHkgLVdkYXRlLXRpbWUgLURfRk9SVElGWV9TT1VSQ0U9MiAtZyAgLWMgZmxveWQuYyAtbyBmbG95ZC5vXG5nY2MgLXN0ZD1nbnU5OSAtSS91c3Ivc2hhcmUvUi9pbmNsdWRlIC1ETkRFQlVHICAgICAgLWZwaWMgIC1nIC1PMiAtZnN0YWNrLXByb3RlY3Rvci1zdHJvbmcgLVdmb3JtYXQgLVdlcnJvcj1mb3JtYXQtc2VjdXJpdHkgLVdkYXRlLXRpbWUgLURfRk9SVElGWV9TT1VSQ0U9MiAtZyAgLWMgaW5pdC5jIC1vIGluaXQub1xuZysrIC1JL3Vzci9zaGFyZS9SL2luY2x1ZGUgLUROREVCVUcgICAgICAtZnBpYyAgLWcgLU8yIC1mc3RhY2stcHJvdGVjdG9yLXN0cm9uZyAtV2Zvcm1hdCAtV2Vycm9yPWZvcm1hdC1zZWN1cml0eSAtV2RhdGUtdGltZSAtRF9GT1JUSUZZX1NPVVJDRT0yIC1nICAtYyBzdm0uY3BwIC1vIHN2bS5vXG4ifQ== -->
-<pre><code>gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rsvm.c -o Rsvm.o
+checking whether g++ accepts -g... yes
+** libs
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rsvm.c -o Rsvm.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmeans.c -o cmeans.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cshell.c -o cshell.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c floyd.c -o floyd.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
-g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c svm.cpp -o svm.o</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoic3ZtLmNwcDogSW4gZnVuY3Rpb24g4oCYc3ZtX21vZGVsKiBzdm1fbG9hZF9tb2RlbChjb25zdCBjaGFyKinigJk6XG5zdm0uY3BwOjI3ODg6MjQ6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICBmc2NhbmYoZnAsXCIlODBzXCIsY21kKTtcbiAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6Mjc5MjoyNTogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICBmc2NhbmYoZnAsXCIlODBzXCIsY21kKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICBeXG5zdm0uY3BwOjI4MTc6MjU6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICAgZnNjYW5mKGZwLFwiJTgwc1wiLGNtZCk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgXlxuc3ZtLmNwcDoyODQxOjMzOiB3YXJuaW5nOiBpZ25vcmluZyByZXR1cm4gdmFsdWUgb2Yg4oCYaW50IGZzY2FuZihGSUxFKiwgY29uc3QgY2hhciosIC4uLinigJksIGRlY2xhcmVkIHdpdGggYXR0cmlidXRlIHdhcm5fdW51c2VkX3Jlc3VsdCBbLVd1bnVzZWQtcmVzdWx0XVxuICAgIGZzY2FuZihmcCxcIiVkXCIsJnBhcmFtLmRlZ3JlZSk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeXG5zdm0uY3BwOjI4NDM6MzM6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICAgZnNjYW5mKGZwLFwiJWxmXCIsJnBhcmFtLmdhbW1hKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6Mjg0NTozMzogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICBmc2NhbmYoZnAsXCIlbGZcIiwmcGFyYW0uY29lZjApO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXlxuc3ZtLmNwcDoyODQ3OjM2OiB3YXJuaW5nOiBpZ25vcmluZyByZXR1cm4gdmFsdWUgb2Yg4oCYaW50IGZzY2FuZihGSUxFKiwgY29uc3QgY2hhciosIC4uLinigJksIGRlY2xhcmVkIHdpdGggYXR0cmlidXRlIHdhcm5fdW51c2VkX3Jlc3VsdCBbLVd1bnVzZWQtcmVzdWx0XVxuICAgIGZzY2FuZihmcCxcIiVkXCIsJm1vZGVsLT5ucl9jbGFzcyk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeXG5zdm0uY3BwOjI4NDk6Mjk6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICAgZnNjYW5mKGZwLFwiJWRcIiwmbW9kZWwtPmwpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeXG5zdm0uY3BwOjI4NTU6MzY6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICAgIGZzY2FuZihmcCxcIiVsZlwiLCZtb2RlbC0+cmhvW2ldKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF5cbnN2bS5jcHA6Mjg2MjozNzogd2FybmluZzogaWdub3JpbmcgcmV0dXJuIHZhbHVlIG9mIOKAmGludCBmc2NhbmYoRklMRSosIGNvbnN0IGNoYXIqLCAuLi4p4oCZLCBkZWNsYXJlZCB3aXRoIGF0dHJpYnV0ZSB3YXJuX3VudXNlZF9yZXN1bHQgWy1XdW51c2VkLXJlc3VsdF1cbiAgICAgZnNjYW5mKGZwLFwiJWRcIiwmbW9kZWwtPmxhYmVsW2ldKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeXG5zdm0uY3BwOjI4Njk6Mzg6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICAgIGZzY2FuZihmcCxcIiVsZlwiLCZtb2RlbC0+cHJvYkFbaV0pO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeXG5zdm0uY3BwOjI4NzY6Mzg6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICAgIGZzY2FuZihmcCxcIiVsZlwiLCZtb2RlbC0+cHJvYkJbaV0pO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeXG5zdm0uY3BwOjI4ODM6MzU6IHdhcm5pbmc6IGlnbm9yaW5nIHJldHVybiB2YWx1ZSBvZiDigJhpbnQgZnNjYW5mKEZJTEUqLCBjb25zdCBjaGFyKiwgLi4uKeKAmSwgZGVjbGFyZWQgd2l0aCBhdHRyaWJ1dGUgd2Fybl91bnVzZWRfcmVzdWx0IFstV3VudXNlZC1yZXN1bHRdXG4gICAgIGZzY2FuZihmcCxcIiVkXCIsJm1vZGVsLT5uU1ZbaV0pO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeXG4ifQ== -->
-<pre><code>svm.cpp: In function ‘svm_model* svm_load_model(const char*)’:
+g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c svm.cpp -o svm.o
+svm.cpp: In function ‘svm_model* svm_load_model(const char*)’:
 svm.cpp:2788:24: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-   fscanf(fp,&quot;%80s&quot;,cmd);
+   fscanf(fp,\%80s\,cmd);
                         ^
 svm.cpp:2792:25: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-    fscanf(fp,&quot;%80s&quot;,cmd);
+    fscanf(fp,\%80s\,cmd);
                          ^
 svm.cpp:2817:25: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-    fscanf(fp,&quot;%80s&quot;,cmd);
+    fscanf(fp,\%80s\,cmd);
                          ^
 svm.cpp:2841:33: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-    fscanf(fp,&quot;%d&quot;,&amp;param.degree);
+    fscanf(fp,\%d\,&amp;param.degree);
                                  ^
 svm.cpp:2843:33: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-    fscanf(fp,&quot;%lf&quot;,&amp;param.gamma);
+    fscanf(fp,\%lf\,&amp;param.gamma);
                                  ^
 svm.cpp:2845:33: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-    fscanf(fp,&quot;%lf&quot;,&amp;param.coef0);
+    fscanf(fp,\%lf\,&amp;param.coef0);
                                  ^
 svm.cpp:2847:36: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-    fscanf(fp,&quot;%d&quot;,&amp;model-&gt;nr_class);
+    fscanf(fp,\%d\,&amp;model-&gt;nr_class);
                                     ^
 svm.cpp:2849:29: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-    fscanf(fp,&quot;%d&quot;,&amp;model-&gt;l);
+    fscanf(fp,\%d\,&amp;model-&gt;l);
                              ^
 svm.cpp:2855:36: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-     fscanf(fp,&quot;%lf&quot;,&amp;model-&gt;rho[i]);
+     fscanf(fp,\%lf\,&amp;model-&gt;rho[i]);
                                     ^
 svm.cpp:2862:37: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-     fscanf(fp,&quot;%d&quot;,&amp;model-&gt;label[i]);
+     fscanf(fp,\%d\,&amp;model-&gt;label[i]);
                                      ^
 svm.cpp:2869:38: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-     fscanf(fp,&quot;%lf&quot;,&amp;model-&gt;probA[i]);
+     fscanf(fp,\%lf\,&amp;model-&gt;probA[i]);
                                       ^
 svm.cpp:2876:38: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-     fscanf(fp,&quot;%lf&quot;,&amp;model-&gt;probB[i]);
+     fscanf(fp,\%lf\,&amp;model-&gt;probB[i]);
                                       ^
 svm.cpp:2883:35: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
-     fscanf(fp,&quot;%d&quot;,&amp;model-&gt;nSV[i]);
-                                   ^</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiZysrIC1zaGFyZWQgLUwvdXNyL2xpYi9SL2xpYiAtV2wsLUJzeW1ib2xpYy1mdW5jdGlvbnMgLVdsLC16LHJlbHJvIC1vIGUxMDcxLnNvIFJzdm0ubyBjbWVhbnMubyBjc2hlbGwubyBmbG95ZC5vIGluaXQubyBzdm0ubyAtTC91c3IvbGliL1IvbGliIC1sUlxuIn0= -->
-<pre><code>g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o e1071.so Rsvm.o cmeans.o cshell.o floyd.o init.o svm.o -L/usr/lib/R/lib -lR</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiaW5zdGFsbGluZyB0byAvaG9tZS9hbW9naC9SL3g4Nl82NC1wYy1saW51eC1nbnUtbGlicmFyeS8zLjIvZTEwNzEvbGlic1xuKiogUlxuKiogaW5zdFxuKiogcHJlcGFyaW5nIHBhY2thZ2UgZm9yIGxhenkgbG9hZGluZ1xuKiogaGVscFxuKioqIGluc3RhbGxpbmcgaGVscCBpbmRpY2VzXG4qKiBidWlsZGluZyBwYWNrYWdlIGluZGljZXNcbioqIGluc3RhbGxpbmcgdmlnbmV0dGVzXG4qKiB0ZXN0aW5nIGlmIGluc3RhbGxlZCBwYWNrYWdlIGNhbiBiZSBsb2FkZWRcbiogRE9ORSAoZTEwNzEpXG4ifQ== -->
-<pre><code>installing to /home/amogh/R/x86_64-pc-linux-gnu-library/3.2/e1071/libs
+     fscanf(fp,\%d\,&amp;model-&gt;nSV[i]);
+                                   ^
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o e1071.so Rsvm.o cmeans.o cshell.o floyd.o init.o svm.o -L/usr/lib/R/lib -lR
+installing to /home/amogh/R/x86_64-pc-linux-gnu-library/3.2/e1071/libs
 ** R
 ** inst
 ** preparing package for lazy loading
@@ -282,69 +267,53 @@ svm.cpp:2883:35: warning: ignoring return value of ‘int fscanf(FILE*, const ch
 ** building package indices
 ** installing vignettes
 ** testing if installed package can be loaded
-* DONE (e1071)</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5UaGUgZG93bmxvYWRlZCBzb3VyY2UgcGFja2FnZXMgYXJlIGluXG5cdOKAmC90bXAvUnRtcFVnb3BPSy9kb3dubG9hZGVkX3BhY2thZ2Vz4oCZXG4ifQ== -->
-<pre><code>
+* DONE (e1071)
+
 The downloaded source packages are in
     ‘/tmp/RtmpUgopOK/downloaded_packages’</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShlMTA3MSlcbmBgYCJ9 -->
-<pre class="r"><code>library(e1071)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxubGlicmFyeShlMTA3MSlcbmBgYFxuYGBgIn0= -->
+<p><code>r</code>r library(e1071)</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1JlYWQgaW4gdGhlIGNzdiBkYXRhIGludG8gYSBkYXRhIGZyYW1lXG5yZXN0YXVyYW50RGF0YSA8LSByZWFkLmNzdihcInVwZGF0ZWRjc3YuY3N2XCIpXG5gYGAifQ== -->
-<pre class="r"><code>#Read in the csv data into a data frame
-restaurantData &lt;- read.csv(&quot;updatedcsv.csv&quot;)</code></pre>
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuI0dldCBjbGFzc2lmaWNhdGlvbiB2YXJpYWJsZSAodXNlciByYXRpbmcgZm9yIGEgZ2l2ZW4gcmV2aWV3KVxuY2xhc3NpZmljYXRpb25WYXJpYWJsZSA8LSByZXN0YXVyYW50RGF0YSRzdGFyc1xuYGBgXG5gYGAifQ== -->
+<p><code>r</code>r #Get classification variable (user rating for a given review) classificationVariable &lt;- restaurantData$stars</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI09ubHkgZ2V0IHJlbGV2YW50IHJlc3RhdXJhbnQgZGF0YSBwcmVkaWN0b3JzLCBzdG9yZSBpbiBzZXBhcmF0ZSBkYXRhIGZyYW1lXG5yZWxldmFudFJlc3RhdXJhbnREYXRhUHJlZGljdG9ycyA8LSBzdWJzZXQocmVzdGF1cmFudERhdGEsIHNlbGVjdCA9IGMoXCJidXNpbmVzc19zdGFyc1wiLCBcInNlbnRpbWVudFwiKSlcbnJlbGV2YW50UmVzdGF1cmFudERhdGFQcmVkaWN0b3JzJGJ1c2luZXNzX3N0YXJzID0gcm91bmQocmVsZXZhbnRSZXN0YXVyYW50RGF0YVByZWRpY3RvcnMkYnVzaW5lc3Nfc3RhcnMpXG5gYGAifQ== -->
-<pre class="r"><code>#Only get relevant restaurant data predictors, store in separate data frame
-relevantRestaurantDataPredictors &lt;- subset(restaurantData, select = c(&quot;business_stars&quot;, &quot;sentiment&quot;))
-relevantRestaurantDataPredictors$business_stars = round(relevantRestaurantDataPredictors$business_stars)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI0dldCBjbGFzc2lmaWNhdGlvbiB2YXJpYWJsZSAodXNlciByYXRpbmcgZm9yIGEgZ2l2ZW4gcmV2aWV3KVxuY2xhc3NpZmljYXRpb25WYXJpYWJsZSA8LSByZXN0YXVyYW50RGF0YSRzdGFyc1xuYGBgIn0= -->
-<pre class="r"><code>#Get classification variable (user rating for a given review)
-classificationVariable &lt;- restaurantData$stars</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyMjTm93IGdvaW5nIHRvIHNwbGl0IGludG8gdHJhaW5pbmcgYW5kIHRlc3Rpbmcgc2V0cyMjI1xuIyMjTk9URTogVHJhaW5pbmcgYW4gU1ZNIHdpdGggMjAwMDAwIHJvd3MgaXMgdmVyeSBjb21wdXRhdGlvbmFsbHkgc2xvdyMjI1xuIyNUaGF0J3Mgd2h5IHNhbXBsZSA1MDAwIGF0IGEgZ2l2ZW4gdGltZSBhbmQgYXBwbHkgaXQgdG8gYSAxMDAwIyMjXG50cmFpbkluZGV4IDwtIHNhbXBsZShucm93KHJlc3RhdXJhbnREYXRhKSwgNTAwMClcbnhUcmFpbiA8LSByZWxldmFudFJlc3RhdXJhbnREYXRhUHJlZGljdG9yc1t0cmFpbkluZGV4LCBdXG55VHJhaW4gPC0gY2xhc3NpZmljYXRpb25WYXJpYWJsZVt0cmFpbkluZGV4XVxudGVzdEluZGV4IDwtIHNhbXBsZShucm93KHJlc3RhdXJhbnREYXRhKSwgMjAwMClcbnhUZXN0IDwtIHJlbGV2YW50UmVzdGF1cmFudERhdGFQcmVkaWN0b3JzW3Rlc3RJbmRleCwgXVxueVRlc3QgPC0gY2xhc3NpZmljYXRpb25WYXJpYWJsZVt0ZXN0SW5kZXhdXG5gYGBcbmBgYCJ9 -->
+<p><code>r</code>r ###Now going to split into training and testing sets### ###NOTE: Training an SVM with 200000 rows is very computationally slow### ##That’s why sample 5000 at a given time and apply it to a 1000### trainIndex &lt;- sample(nrow(restaurantData), 5000) xTrain &lt;- relevantRestaurantDataPredictors[trainIndex, ] yTrain &lt;- classificationVariable[trainIndex] testIndex &lt;- sample(nrow(restaurantData), 2000) xTest &lt;- relevantRestaurantDataPredictors[testIndex, ] yTest &lt;- classificationVariable[testIndex]</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyMjTm93IGdvaW5nIHRvIHNwbGl0IGludG8gdHJhaW5pbmcgYW5kIHRlc3Rpbmcgc2V0cyMjI1xuIyMjTk9URTogVHJhaW5pbmcgYW4gU1ZNIHdpdGggMjAwMDAwIHJvd3MgaXMgdmVyeSBjb21wdXRhdGlvbmFsbHkgc2xvdyMjI1xuIyNUaGF0J3Mgd2h5IHNhbXBsZSA1MDAwIGF0IGEgZ2l2ZW4gdGltZSBhbmQgYXBwbHkgaXQgdG8gYSAxMDAwIyMjXG50cmFpbkluZGV4IDwtIHNhbXBsZShucm93KHJlc3RhdXJhbnREYXRhKSwgNTAwMClcbnhUcmFpbiA8LSByZWxldmFudFJlc3RhdXJhbnREYXRhUHJlZGljdG9yc1t0cmFpbkluZGV4LCBdXG55VHJhaW4gPC0gY2xhc3NpZmljYXRpb25WYXJpYWJsZVt0cmFpbkluZGV4XVxudGVzdEluZGV4IDwtIHNhbXBsZShucm93KHJlc3RhdXJhbnREYXRhKSwgMjAwMClcbnhUZXN0IDwtIHJlbGV2YW50UmVzdGF1cmFudERhdGFQcmVkaWN0b3JzW3Rlc3RJbmRleCwgXVxueVRlc3QgPC0gY2xhc3NpZmljYXRpb25WYXJpYWJsZVt0ZXN0SW5kZXhdXG5gYGAifQ== -->
-<pre class="r"><code>###Now going to split into training and testing sets###
-###NOTE: Training an SVM with 200000 rows is very computationally slow###
-##That's why sample 5000 at a given time and apply it to a 1000###
-trainIndex &lt;- sample(nrow(restaurantData), 5000)
-xTrain &lt;- relevantRestaurantDataPredictors[trainIndex, ]
-yTrain &lt;- classificationVariable[trainIndex]
-testIndex &lt;- sample(nrow(restaurantData), 2000)
-xTest &lt;- relevantRestaurantDataPredictors[testIndex, ]
-yTest &lt;- classificationVariable[testIndex]</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0IDwtIGRhdGEuZnJhbWUoeCA9IHhUcmFpbiwgeSA9IGFzLmZhY3Rvcih5VHJhaW4pKVxuc3ZtRml0IDwtIHN2bSh5IH4gLiwgZGF0YSA9IGRhdClcbmBgYCJ9 -->
-<pre class="r"><code>dat &lt;- data.frame(x = xTrain, y = as.factor(yTrain))
-svmFit &lt;- svm(y ~ ., data = dat)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuZGF0IDwtIGRhdGEuZnJhbWUoeCA9IHhUcmFpbiwgeSA9IGFzLmZhY3Rvcih5VHJhaW4pKVxuc3ZtRml0IDwtIHN2bSh5IH4gLiwgZGF0YSA9IGRhdClcbmBgYFxuYGBgIn0= -->
+<p><code>r</code>r dat &lt;- data.frame(x = xTrain, y = as.factor(yTrain)) svmFit &lt;- svm(y ~ ., data = dat)</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGVzdERhdCA8LSBkYXRhLmZyYW1lKHggPSB4VGVzdCwgeSA9IHlUZXN0KVxueVByZWQgPC0gcHJlZGljdChzdm1GaXQsIHRlc3REYXQpXG50YWJsZShwcmVkaWN0ID0geVByZWQsIHRydXRoID0geVRlc3QpXG5gYGAifQ== -->
-<pre class="r"><code>testDat &lt;- data.frame(x = xTest, y = yTest)
-yPred &lt;- predict(svmFit, testDat)
-table(predict = yPred, truth = yTest)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxudGVzdERhdCA8LSBkYXRhLmZyYW1lKHggPSB4VGVzdCwgeSA9IHlUZXN0KVxueVByZWQgPC0gcHJlZGljdChzdm1GaXQsIHRlc3REYXQpXG50YWJsZShwcmVkaWN0ID0geVByZWQsIHRydXRoID0geVRlc3QpXG5gYGBcbmBgYCJ9 -->
+<p><code>r</code>r testDat &lt;- data.frame(x = xTest, y = yTest) yPred &lt;- predict(svmFit, testDat) table(predict = yPred, truth = yTest)</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIHRydXRoXG5wcmVkaWN0ICAgMSAgIDIgICAzICAgNCAgIDVcbiAgICAgIDEgMTE2ICA2OCAgMzAgIDE4ICAgOVxuICAgICAgMiAgMTEgIDEwICAgOSAgIDMgICAxXG4gICAgICAzICAxNiAgMzggIDU1ICA0NiAgMzJcbiAgICAgIDQgIDY5ICA5NyAxNjIgMjcxIDIxMFxuICAgICAgNSAgIDMgIDExICA1NSAyNzEgMzg5XG4ifQ== -->
 <pre><code>       truth
@@ -360,7 +329,7 @@ predict   1   2   3   4   5
 <p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouIAoKYGBge3J9Cmluc3RhbGwucGFja2FnZXMoImUxMDcxIikKbGlicmFyeShlMTA3MSkKYGBgCgpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouCmBgYHtyfQojUmVhZCBpbiB0aGUgY3N2IGRhdGEgaW50byBhIGRhdGEgZnJhbWUKcmVzdGF1cmFudERhdGEgPC0gcmVhZC5jc3YoInVwZGF0ZWRjc3YuY3N2IikKYGBgCgpgYGB7cn0KI09ubHkgZ2V0IHJlbGV2YW50IHJlc3RhdXJhbnQgZGF0YSBwcmVkaWN0b3JzLCBzdG9yZSBpbiBzZXBhcmF0ZSBkYXRhIGZyYW1lCnJlbGV2YW50UmVzdGF1cmFudERhdGFQcmVkaWN0b3JzIDwtIHN1YnNldChyZXN0YXVyYW50RGF0YSwgc2VsZWN0ID0gYygiYnVzaW5lc3Nfc3RhcnMiLCAic2VudGltZW50IikpCgpyZWxldmFudFJlc3RhdXJhbnREYXRhUHJlZGljdG9ycyRidXNpbmVzc19zdGFycyA9IHJvdW5kKHJlbGV2YW50UmVzdGF1cmFudERhdGFQcmVkaWN0b3JzJGJ1c2luZXNzX3N0YXJzKQpgYGAKYGBge3J9CiNHZXQgY2xhc3NpZmljYXRpb24gdmFyaWFibGUgKHVzZXIgcmF0aW5nIGZvciBhIGdpdmVuIHJldmlldykKY2xhc3NpZmljYXRpb25WYXJpYWJsZSA8LSByZXN0YXVyYW50RGF0YSRzdGFycwpgYGAKCmBgYHtyfQojIyNOb3cgZ29pbmcgdG8gc3BsaXQgaW50byB0cmFpbmluZyBhbmQgdGVzdGluZyBzZXRzIyMjCgojIyNOT1RFOiBUcmFpbmluZyBhbiBTVk0gd2l0aCAyMDAwMDAgcm93cyBpcyB2ZXJ5IGNvbXB1dGF0aW9uYWxseSBzbG93IyMjCiMjVGhhdCdzIHdoeSBzYW1wbGUgNTAwMCBhdCBhIGdpdmVuIHRpbWUgYW5kIGFwcGx5IGl0IHRvIGEgMTAwMCMjIwp0cmFpbkluZGV4IDwtIHNhbXBsZShucm93KHJlc3RhdXJhbnREYXRhKSwgNTAwMCkKeFRyYWluIDwtIHJlbGV2YW50UmVzdGF1cmFudERhdGFQcmVkaWN0b3JzW3RyYWluSW5kZXgsIF0KeVRyYWluIDwtIGNsYXNzaWZpY2F0aW9uVmFyaWFibGVbdHJhaW5JbmRleF0KCgp0ZXN0SW5kZXggPC0gc2FtcGxlKG5yb3cocmVzdGF1cmFudERhdGEpLCAyMDAwKQp4VGVzdCA8LSByZWxldmFudFJlc3RhdXJhbnREYXRhUHJlZGljdG9yc1t0ZXN0SW5kZXgsIF0KeVRlc3QgPC0gY2xhc3NpZmljYXRpb25WYXJpYWJsZVt0ZXN0SW5kZXhdCmBgYApgYGB7cn0KZGF0IDwtIGRhdGEuZnJhbWUoeCA9IHhUcmFpbiwgeSA9IGFzLmZhY3Rvcih5VHJhaW4pKQpzdm1GaXQgPC0gc3ZtKHkgfiAuLCBkYXRhID0gZGF0KQpgYGAKCmBgYHtyfQp0ZXN0RGF0IDwtIGRhdGEuZnJhbWUoeCA9IHhUZXN0LCB5ID0geVRlc3QpCnlQcmVkIDwtIHByZWRpY3Qoc3ZtRml0LCB0ZXN0RGF0KQp0YWJsZShwcmVkaWN0ID0geVByZWQsIHRydXRoID0geVRlc3QpCmBgYAoKCgoKV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouIAoKYGBge3J9Cmluc3RhbGwucGFja2FnZXMoImUxMDcxIikKbGlicmFyeShlMTA3MSkKYGBgCgpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouCmBgYHtyfQojUmVhZCBpbiB0aGUgY3N2IGRhdGEgaW50byBhIGRhdGEgZnJhbWUKcmVzdGF1cmFudERhdGEgPC0gcmVhZC5jc3YoInVwZGF0ZWRjc3YuY3N2IikKYGBgCgpgYGB7cn0KI09ubHkgZ2V0IHJlbGV2YW50IHJlc3RhdXJhbnQgZGF0YSBwcmVkaWN0b3JzLCBzdG9yZSBpbiBzZXBhcmF0ZSBkYXRhIGZyYW1lCnJlbGV2YW50UmVzdGF1cmFudERhdGFQcmVkaWN0b3JzIDwtIHN1YnNldChyZXN0YXVyYW50RGF0YSwgc2VsZWN0ID0gYygiYnVzaW5lc3Nfc3RhcnMiLCAic2VudGltZW50IikpCgpyZWxldmFudFJlc3RhdXJhbnREYXRhUHJlZGljdG9ycyRidXNpbmVzc19zdGFycyA9IHJvdW5kKHJlbGV2YW50UmVzdGF1cmFudERhdGFQcmVkaWN0b3JzJGJ1c2luZXNzX3N0YXJzKQpgYGAKYGBge3J9CiNHZXQgY2xhc3NpZmljYXRpb24gdmFyaWFibGUgKHVzZXIgcmF0aW5nIGZvciBhIGdpdmVuIHJldmlldykKY2xhc3NpZmljYXRpb25WYXJpYWJsZSA8LSByZXN0YXVyYW50RGF0YSRzdGFycwpgYGAKCmBgYHtyfQojIyNOb3cgZ29pbmcgdG8gc3BsaXQgaW50byB0cmFpbmluZyBhbmQgdGVzdGluZyBzZXRzIyMjCgojIyNOT1RFOiBUcmFpbmluZyBhbiBTVk0gd2l0aCAyMDAwMDAgcm93cyBpcyB2ZXJ5IGNvbXB1dGF0aW9uYWxseSBzbG93IyMjCiMjVGhhdCdzIHdoeSBzYW1wbGUgNTAwMCBhdCBhIGdpdmVuIHRpbWUgYW5kIGFwcGx5IGl0IHRvIGEgMTAwMCMjIwp0cmFpbkluZGV4IDwtIHNhbXBsZShucm93KHJlc3RhdXJhbnREYXRhKSwgNTAwMCkKeFRyYWluIDwtIHJlbGV2YW50UmVzdGF1cmFudERhdGFQcmVkaWN0b3JzW3RyYWluSW5kZXgsIF0KeVRyYWluIDwtIGNsYXNzaWZpY2F0aW9uVmFyaWFibGVbdHJhaW5JbmRleF0KCgp0ZXN0SW5kZXggPC0gc2FtcGxlKG5yb3cocmVzdGF1cmFudERhdGEpLCAyMDAwKQp4VGVzdCA8LSByZWxldmFudFJlc3RhdXJhbnREYXRhUHJlZGljdG9yc1t0ZXN0SW5kZXgsIF0KeVRlc3QgPC0gY2xhc3NpZmljYXRpb25WYXJpYWJsZVt0ZXN0SW5kZXhdCmBgYAoKYGBge3J9CgojVHJhaW4gdGhlIG1vZGVsCmRhdCA8LSBkYXRhLmZyYW1lKHggPSB4VHJhaW4sIHkgPSBhcy5mYWN0b3IoeVRyYWluKSkKc3ZtRml0IDwtIHN2bSh5IH4gLiwgZGF0YSA9IGRhdCkKYGBgCgpgYGB7cn0KCiNGaXQgdGhlIG1vZGVsIGFuZCBkaXNwbGF5IGEgdHJ1dGggdGFibGUKdGVzdERhdCA8LSBkYXRhLmZyYW1lKHggPSB4VGVzdCwgeSA9IHlUZXN0KQp5UHJlZCA8LSBwcmVkaWN0KHN2bUZpdCwgdGVzdERhdCkKdGFibGUocHJlZGljdCA9IHlQcmVkLCB0cnV0aCA9IHlUZXN0KQpgYGAKCgoKCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLg==</div>
 
 
 

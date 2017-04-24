@@ -43,12 +43,17 @@ testIndex <- sample(nrow(restaurantData), 2000)
 xTest <- relevantRestaurantDataPredictors[testIndex, ]
 yTest <- classificationVariable[testIndex]
 ```
+
 ```{r}
+
+#Train the model
 dat <- data.frame(x = xTrain, y = as.factor(yTrain))
 svmFit <- svm(y ~ ., data = dat)
 ```
 
 ```{r}
+
+#Fit the model and display a truth table
 testDat <- data.frame(x = xTest, y = yTest)
 yPred <- predict(svmFit, testDat)
 table(predict = yPred, truth = yTest)
