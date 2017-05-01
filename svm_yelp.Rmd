@@ -8,7 +8,7 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
 ```{r}
-install.packages("e1071")
+#install.packages("e1071")
 library(e1071)
 ```
 
@@ -71,11 +71,11 @@ getAccuraciesFromTable <- function(truth_table){
     for(predict in 1:5){
     
       if(truth == predict){
-          accuratelyIdentified = result[truth, predict]
+          accuratelyIdentified = truth_table[truth, predict]
       }
       
       else{
-        falsleyIdentified = result[truth, predict]
+        falsleyIdentified = truth_table[truth, predict]
       }
       
   
@@ -95,7 +95,7 @@ getAccuraciesFromTable <- function(truth_table){
 
 accuracyChangeSVM <- function(sampleSize, fixedTestSize){
   allAccuracies <- c()
-  for(i in seq(1, sampleSize, by = 1000)){
+  for(i in seq(2000, sampleSize, by = 1000)){
     trainIndex <- sample(nrow(restaurantData), sampleSize)
     xTrain <- relevantRestaurantDataPredictors[trainIndex, ]
     yTrain <- classificationVariable[trainIndex]
@@ -115,15 +115,62 @@ accuracyChangeSVM <- function(sampleSize, fixedTestSize){
 
 }
 
-test <- accuracyChangeSVM(15000, 2000)
+test <- accuracyChangeSVM(20000, 5000)
 ```
 
 
 ```{r}
-svmMatrix <- matrix(test, nrow = 9, ncol = 5)
+svmMatrix <- matrix(test, nrow = 19, ncol = 5)
 ```
 ```{r}
 svmMatrix
+```
+
+```{r}
+averageAccuracy <- function(fixedTrainSize, fixedTestSize, numberSamples){
+  accuracies <- c()
+  for(i in 1:numberSamples){
+    trainIndex <- sample(nrow(restaurantData), fixedTrainSize)
+    xTrain <- relevantRestaurantDataPredictors[trainIndex, ]
+    yTrain <- classificationVariable[trainIndex]
+    testIndex <- sample(nrow(restaurantData), fixedTestSize)
+    xTest <- relevantRestaurantDataPredictors[testIndex, ]
+    yTest <- classificationVariable[testIndex]
+    dat <- data.frame(x = xTrain, y = as.factor(yTrain))
+    svmFit <- svm(y ~ ., data = dat)
+    testDat <- data.frame(x = xTest, y = yTest)
+    yPred <- predict(svmFit, testDat)
+    accuracyTable <- table(predict = yPred, truth = yTest)
+    accuracyForCurrentSample <- getAccuraciesFromTable(accuracyTable)
+    accuracies = c(accuracies, accuracyForCurrentSample)
+    print(accuracies)
+  }
+  
+  return(accuracies)
+
+}
+
+test <- averageAccuracy(20000, 5000, 5)
+
+```
+```{r}
+accuracyMatrix <- matrix(test, nrow = 5, ncol = 5)
+accuracyMatrix <- t(accuracyMatrix)
+```
+```{r}
+accuracyMatrix[1, 2] = mean(accuracyMatrix[which(is.nan(accuracyMatrix[,2]) == FALSE),2])
+```
+
+```{r}
+accuracyMatrix
+mean(accuracyMatrix[,1])
+mean(accuracyMatrix[,2])
+mean(accuracyMatrix[,3])
+mean(accuracyMatrix[,4])
+mean(accuracyMatrix[,5])
+
+
+
 ```
 
 
