@@ -56,10 +56,75 @@ svmFit <- svm(y ~ ., data = dat)
 #Fit the model and display a truth table
 testDat <- data.frame(x = xTest, y = yTest)
 yPred <- predict(svmFit, testDat)
-table(predict = yPred, truth = yTest)
+result <- table(predict = yPred, truth = yTest)
+```
+
+```{r}
+
+getAccuraciesFromTable <- function(truth_table){
+  
+  accuracies = c()
+  for(truth in  1:5){
+    accuratelyIdentified = 0
+    falsleyIdentified = 0
+    
+    for(predict in 1:5){
+    
+      if(truth == predict){
+          accuratelyIdentified = result[truth, predict]
+      }
+      
+      else{
+        falsleyIdentified = result[truth, predict]
+      }
+      
+  
+    }
+    
+      accuracy = accuratelyIdentified/(accuratelyIdentified + falsleyIdentified)
+      accuracies = c(accuracies, accuracy)
+  }
+  return(accuracies)
+}
+
+
+```
+
+```{r}
+##SEE HOW SUPPORT VECTOR MACHINE ACCURACY CHANGES AS TRAIN SAMPLE SIZE CHANGES####
+
+accuracyChangeSVM <- function(sampleSize, fixedTestSize){
+  allAccuracies <- c()
+  for(i in seq(1, sampleSize, by = 1000)){
+    trainIndex <- sample(nrow(restaurantData), sampleSize)
+    xTrain <- relevantRestaurantDataPredictors[trainIndex, ]
+    yTrain <- classificationVariable[trainIndex]
+    testIndex <- sample(nrow(restaurantData), fixedTestSize)
+    xTest <- relevantRestaurantDataPredictors[testIndex, ]
+    yTest <- classificationVariable[testIndex]
+    dat <- data.frame(x = xTrain, y = as.factor(yTrain))
+    svmFit <- svm(y ~ ., data = dat)
+    testDat <- data.frame(x = xTest, y = yTest)
+    yPred <- predict(svmFit, testDat)
+    result <- table(predict = yPred, truth = yTest)
+    accuracyForCurrentSampleSize <- getAccuraciesFromTable(result)
+    allAccuracies = c(allAccuracies, accuracyForCurrentSampleSize)
+  }
+  
+  return(allAccuracies)
+
+}
+
+test <- accuracyChangeSVM(15000, 2000)
 ```
 
 
+```{r}
+svmMatrix <- matrix(test, nrow = 9, ncol = 5)
+```
+```{r}
+svmMatrix
+```
 
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
