@@ -23,4 +23,4 @@ Mining data from the Yelp Dataset Challenge. Building an accurate model to class
 Found [here](https://www.screencast.com/t/RRMOXgZSE8as)
 
 ## Final Report
-Found here
+Found [here](https://github.com/tlugger/YelpMining/blob/master/05_YelpMining_Part6.pdf)
